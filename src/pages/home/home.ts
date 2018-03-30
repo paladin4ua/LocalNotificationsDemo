@@ -24,12 +24,14 @@ export class HomePage {
 
   onScheduleClick() {
 
-    let time = new Date();
+
     let notifications : Notification[] = [];
 
     for (let i = 0; i < 10; ++i) {
 
-      time.setSeconds(time.getSeconds() + 10);
+      let time = new Date();
+
+      time.setSeconds(time.getSeconds() + 10 * i + 10);
 
       notifications.push({
         id: i,
