@@ -31,7 +31,7 @@ export class HomePage {
 
       let time = new Date();
 
-      time.setSeconds(time.getSeconds() + 10 * i + 10);
+      time.setSeconds(time.getSeconds() + 5);
 
       notifications.push({
         id: i,
